@@ -1,0 +1,18 @@
+html
+  head
+    title= title
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    div(class='col-xs-4', style='background: lightblue')
+      p(style='font-size: 24px; font-weight: bold') VotingApp
+    div(class='col-xs-4', style='background: lightblue')
+      p JD Lafrance
+    div(class='col-xs-4', style='background: lightblue')
+      button(class='btn btn-large btn-primary') Sign in with twitter
+      
+      
+    div.container
+        #values
+            ul
+                for val in values
+                    li= val

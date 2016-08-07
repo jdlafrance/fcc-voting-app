@@ -1,0 +1,28 @@
+
+
+html
+  head
+    title= title
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    div(class='col-xs-4', style='background: lightblue')
+      p(style='font-size: 24px; font-weight: bold') VotingApp
+    div(class='col-xs-4', style='background: lightblue')
+      p JD Lafrance
+    div(class='col-xs-4', style='background: lightblue')
+      button(class='btn btn-large btn-primary') Sign in with twitter
+    
+    div.container
+      div.welcome(style='text-align: center; margin-top: 100px')
+        p(style='font-size: 16px; font-weight: bold')= message
+        p(style='font-size: 16px; font-weight: bold')= message1
+      
+      div.pollslist
+      #values
+      #click
+        ul.list
+        for val in values
+            li(onclick='console.log("Clicked!!")')= val
+
+  
+  
