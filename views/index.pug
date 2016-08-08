@@ -4,25 +4,25 @@ html
   head
     title= title
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/welcome.css', rel='stylesheet', type='text/css')
   body
-    div(class='col-xs-4', style='background: lightblue')
-      p(style='font-size: 24px; font-weight: bold') VotingApp
-    div(class='col-xs-4', style='background: lightblue')
-      p JD Lafrance
-    div(class='col-xs-4', style='background: lightblue')
-      button(class='btn btn-large btn-primary') Sign in with twitter
+    div.container-fluid.menubar
+      div(class='col-xs-4')
+        p(style='font-size: 24px; font-weight: bold') VotingApp
+      div(class='col-xs-4')
+        p JD Lafrance
+      div(class='col-xs-4')
+        button(class='btn btn-large btn-primary') Sign in with twitter
     
     div.container
-      div.welcome(style='text-align: center; margin-top: 100px')
-        p(style='font-size: 16px; font-weight: bold')= message
-        p(style='font-size: 16px; font-weight: bold')= message1
+      div.welcome Welcome! Please log in to create polls or consult and vote in the polls available below.
+      div.contact This web app was created by jd lafrance
       
-      div.pollslist
+      div.list-group
       #values
-      #click
-        ul.list
-        for val in values
-            li(onclick='console.log("Clicked!!")')= val
+      #display
+        each val, index in values
+              a(href=display[index], class='list-group-item') #{val}
 
   
   

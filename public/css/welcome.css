@@ -1,0 +1,31 @@
+.welcome{
+    margin-top: 100px;
+    font-size: 24pt;
+    font-family: 'Comic Sans';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    text-align: center;
+    font-size: 16pt;
+    font-family: 'Comic Sans';
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.list-group-item{
+    background-color: gray;
+    text-align: center;
+    margin-top: 5px;
+    transition-duration: 200;
+    opacity: .7;
+}
+
+.menubar{
+    height: 50px;
+    background-color: blue;
+    margin: auto;
+    text-align: center;
+}
